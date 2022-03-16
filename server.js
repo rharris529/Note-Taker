@@ -3,7 +3,7 @@ const express = require('express');
 const PORT = process.env.PORT || 3001; 
 const app = express();
 const noteRoutes = require('./routes/apiRoutes');
-const htmlRoutes = require('./routes/htmlRoutes');
+const htmlRoutes = require('./routes/htmlRoutes/webpage');
 
 app.use(express.static('public'));
 // parse incoming data into strings or arrays 
